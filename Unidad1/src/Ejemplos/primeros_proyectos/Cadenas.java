@@ -13,6 +13,8 @@ public class Cadenas {
 		nombre=teclado.nextLine();
 		
 		System.out.print("Hola " +nombre);
+		
+		teclado.close();
 	}
 
 }
