@@ -1,7 +1,7 @@
 package Ejemplos.primeros_proyectos;
 
 public class Operadores {
-
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int X;
 		double Y;

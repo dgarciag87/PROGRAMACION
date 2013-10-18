@@ -5,7 +5,7 @@ public class Ejercicio6 {
 		float x1,x2,y1,y2; 
 		float area;
 		
-		x1=4;
+		x1=4.2f;
 		x2=1;
 		y1=8;
 		y2=3; 
