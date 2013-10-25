@@ -4,19 +4,22 @@ import java.util.Scanner;
 
 public class Ejercicio9 {
 	public static void main(String[] args) {
-		float peso,velocidad,tiempo;
+		double peso,velocidad,tiempo;
 		
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.print("Introduzca el peso del archivo en Mbytes: ");
-		peso = teclado.nextFloat();
+		peso = teclado.nextDouble();
 		
 		System.out.print("Introduzca la velocidad de transmision en mbps: ");
-		velocidad = teclado.nextFloat();
+		velocidad = teclado.nextDouble();
 		
-		tiempo=peso*velocidad;
+		peso= peso*1024*1024*8;
+		velocidad=velocidad*1000000;
 		
-		System.out.print("El tiempo que tardara en transmitirlo es: "+tiempo +(" segundos"));
+		tiempo=peso/velocidad;
+		
+		System.out.print("El tiempo que tardara en transmitirlo es: "+Math.round(tiempo) +(" segundos"));
 
 		teclado.close();
 	}
